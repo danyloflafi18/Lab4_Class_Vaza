@@ -1,0 +1,34 @@
+#include <iostream>
+#include <string>
+#include "Vaza.h"
+using namespace std;
+
+void outputOfVaseData (Vaza vaza);
+
+int main()
+{
+	Vaza Vaza1(2,1,"Glass",123,4,500,"Lviv");
+	Vaza Vaza2(4, 7, "Сrystal", 43, 9, 773, "Drohobych");
+	Vaza Vaza3(6, 2, "Plastic", 55, 1, 98, "Kyiv");
+	outputOfVaseData(Vaza1);
+	outputOfVaseData(Vaza2);
+	outputOfVaseData(Vaza3); 
+	getchar();
+}
+
+void outputOfVaseData(Vaza vaza)
+{
+	cout << "\Owner: " << vaza.getOwner();
+
+	cout << "\nVolume of water: " << vaza.getVolumeOfWater();
+
+	cout << "\nThe weight of the vase: " << vaza.getTheWeightOfTheVase();
+	
+	cout << "\nThe type of material: " << vaza.getTheTypeOfMaterial(); 
+	
+	cout << "\nQuantity sold: " << vaza.getQuantitySold();
+	
+	cout << "\nThe number of broken: " << vaza.getTheNumberOfBroken();
+
+	cout << "\nNumber: " << vaza.getNumber();
+}
